@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>〇✕GAME</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1 class="game-title">〇✕ゲーム</h1>
+  <div class="game-info__wrap">
+    <h2 class="game-info__title">遊び方</h2>
+    <div class="game-info__box">
+      <dl>
+        <dt>人数</dt>
+        <dd>：2人</dd>
+      </dl>
+      <dl>
+        <dt>ルール</dt>
+        <dd>：先攻・後攻が交互にパネルを置いていき、縦・横・斜めのどこか１列に揃えた方が勝ち！</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="game-area">
+    <ul class="panel-list">
+      <li class="panel-list--soccer" draggable="true" data-panel="soccer"></li>
+      <li class="panel-list--badminton" draggable="true" data-panel="badminton"></li>
+    </ul>
+    <div class="game-guide">
+      <!-- ゲーム状況を表示 -->
+    </div>
+    <table class="game-board" id="game-board">
+      <tr>
+        <td><button class="game-cell" data-row="0" data-col="0"></button></td>
+        <td><button class="game-cell" data-row="0" data-col="1"></button></td>
+        <td><button class="game-cell" data-row="0" data-col="2"></button></td>
+      </tr>
+      <tr>
+        <td><button class="game-cell" data-row="1" data-col="0"></button></td>
+        <td><button class="game-cell" data-row="1" data-col="1"></button></td>
+        <td><button class="game-cell" data-row="1" data-col="2"></button></td>
+      </tr>
+      <tr>
+        <td><button class="game-cell" data-row="2" data-col="0"></button></td>
+        <td><button class="game-cell" data-row="2" data-col="1"></button></td>
+        <td><button class="game-cell" data-row="2" data-col="2"></button></td>
+      </tr>
+    </table>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

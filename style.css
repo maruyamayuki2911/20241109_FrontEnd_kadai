@@ -1,0 +1,133 @@
+/* ゲームタイトル */
+.game-title {
+  text-align: center;
+}
+
+/* ------------
+遊び方セクション
+------------*/
+/* レイアウト */
+.game-info__wrap {
+  width: 50%;
+  padding: 10px;
+  margin-inline: auto;
+  max-width: 1300px;
+  background-color: #f0fff0;
+  border-radius: 10px;
+}
+
+/* タイトル */
+.game-info__title {
+  text-align: center;
+}
+
+/* 遊び方 */
+.game-info__box {
+  width: 80%;
+  margin-inline: auto;
+}
+
+
+dl {
+  display: flex;
+}
+
+dt {
+  width: 80px;
+  font-weight: bold;
+}
+
+dd {
+  width: 100%;
+  margin: 0;
+}
+
+/* ------------
+  ゲームエリア
+------------*/
+/* レイアウト */
+.game-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+/* パネル */
+.panel-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+/* ゲームガイド */
+.game-guide {
+  height: 20px;
+  padding-bottom: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+/* リトライボタン */
+.restart-btn {
+  padding: 5px;
+  background-color: #ff0000;
+  color: #f0fff0;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* サッカーパネル・バドミントン共通 */
+.panel-list .panel-list--soccer,
+.panel-list--badminton {
+  width: 96px;
+  height: 96px;
+  border: 1px solid rgb(189, 187, 187);
+}
+
+/* サッカーパネル */
+.panel-list--soccer[data-panel="soccer"] {
+  background: url(./sports-icon.png) -300px -40px / 600% no-repeat;
+}
+
+/* バドミントンパネル */
+.panel-list--badminton[data-panel="badminton"] {
+  background: url(./sports-icon.png) -171px -293px / 600% no-repeat;
+}
+
+
+.game-cell[data-panel="soccer"] {
+  background: url(./sports-icon.png) -314px -41px / 600% no-repeat;
+}
+
+.game-cell[data-panel="badminton"] {
+  background: url(./sports-icon.png) -178px -304px / 600% no-repeat;
+}
+
+/* ゲームボード */
+.game-board {
+  width: max-content;
+  background-color: #dcdcdc;
+}
+
+/* ゲームセル */
+.game-cell {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border: none;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+}
+
+/* パネルを非アクティブ状態 */
+.inactive{
+  filter: opacity(30%);
+}
